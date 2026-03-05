@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 46 42% 97%;
+    --foreground: 220 39% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 39% 11%;
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 191 58% 92%;
+    --secondary-foreground: 188 100% 22%;
+    --muted: 48 23% 90%;
+    --muted-foreground: 215 14% 42%;
+    --accent: 186 58% 88%;
+    --accent-foreground: 188 100% 18%;
+    --destructive: 1 84% 57%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 32 42% 83%;
+    --input: 32 42% 83%;
+    --ring: 24 95% 53%;
+    --radius: 0.85rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background font-body text-foreground antialiased;
+  }
+}
+
